@@ -13,7 +13,7 @@ export default class Score {
         text.setAttributeNS(null, "y", this.y)
         text.setAttributeNS(null, "font-family", "'Silkscreen Web', monotype")
         text.setAttributeNS(null, "font-size", this.size)
-        text.setAttributeNS(null, "fill", "orange")
+        text.setAttributeNS(null, "fill", "green")
         text.textContent = score
         svg.appendChild(text)
 

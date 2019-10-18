@@ -25,10 +25,18 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+h1 {
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 h2 {
   animation: blinker 1s step-start infinite;
   text-align: center;
-  color: red;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
   padding-bottom: 20px;
 }
 
@@ -37,6 +45,13 @@ h2 {
     opacity: 0;
   }
 
+}
+
+body {
+  background-image: url("https://thumbs.gfycat.com/WatchfulUltimateBellsnake-size_restricted.gif"); 
+  background-size: cover;
+  background-position: center center;
+  
 }
 
 /* HTML5 display-role reset for older browsers */
