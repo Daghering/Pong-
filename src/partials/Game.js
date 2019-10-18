@@ -11,9 +11,11 @@ export default class Game {
     this.element = element
     this.width = width
     this.height = height
-    
+    this.gameOn = true
 
     this.gameElement = document.getElementById(this.element);
+
+    
 
 // creates a new instance of board. height and width passed through Game object
     this.board = new Board(this.width, this.height)
@@ -60,6 +62,7 @@ document.addEventListener("keydown", event => {
       this.gameOn = !this.gameOn
       this.player1.speed = 10
       this.player2.speed = 10
+      console.log(this.gameOn)
       break
   }
 })
@@ -73,6 +76,8 @@ document.addEventListener("keydown", event => {
    if(this.gameOn) {
      this.player1.speed = 0
      this.player2.speed = 0
+     console.log(this.gameOn)
+
 
      return
    }
@@ -92,7 +97,6 @@ document.addEventListener("keydown", event => {
     this.ball.render(svg, this.player1, this.player2)
     this.score1.render(svg, this.player1.score)
     this.score2.render(svg, this.player2.score)
-
 
   }
 

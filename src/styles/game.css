@@ -24,6 +24,21 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+h2 {
+  animation: blinker 1s step-start infinite;
+  text-align: center;
+  color: red;
+  padding-bottom: 20px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
