@@ -101,9 +101,11 @@ export default class Ball {
     if(rightGoal) {
         this.goal(player1)
         this.direction = 1 
+        
     } else if(leftGoal) {
         this.goal(player2)
         this.direction = -1
+
     } 
 
    }

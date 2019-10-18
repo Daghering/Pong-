@@ -63,17 +63,15 @@ body {
   
 }
 
+
 #winner {
   
     animation: blinker 1s step-start infinite;
     text-align: center;
     font-size: 1em;
     font-style: bold;
-    
-   
     color: black;
     
-  
 
 }
 
