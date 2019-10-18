@@ -20,7 +20,7 @@ time, mark, audio, video {
   padding: 0;
   color: blue;
 	border: 0;
-	font-size: 100%;
+	font-size: 5em;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -40,6 +40,15 @@ h2 {
   padding-bottom: 20px;
 }
 
+h3 {
+  animation: blinker 1s step-start infinite;
+  text-align: center;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -52,6 +61,20 @@ body {
   background-size: cover;
   background-position: center center;
   
+}
+
+#winner {
+  
+    animation: blinker 1s step-start infinite;
+    text-align: center;
+    font-size: 1em;
+    font-style: bold;
+    
+   
+    color: black;
+    
+  
+
 }
 
 /* HTML5 display-role reset for older browsers */

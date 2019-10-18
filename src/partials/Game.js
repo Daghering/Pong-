@@ -13,9 +13,8 @@ export default class Game {
     this.height = height
     this.gameOn = true
 
-    this.gameElement = document.getElementById(this.element);
+    this.gameElement = document.getElementById(this.element)
 
-    
 
 // creates a new instance of board. height and width passed through Game object
     this.board = new Board(this.width, this.height)
@@ -46,6 +45,7 @@ this.player2 = new Paddle(
    KEYS.down
 )
 
+//score
 this.score1 = new Score(this.width / 2 -50, 30, 30)
 this.score2 = new Score(this.width / 2 +25, 30, 30)
 
@@ -60,16 +60,40 @@ document.addEventListener("keydown", event => {
   switch(event.key) {
     case KEYS.spaceBar:
       this.gameOn = !this.gameOn
-      this.player1.speed = 10
-      this.player2.speed = 10
+      this.player1.speed = 12
+      this.player2.speed = 12
       console.log(this.gameOn)
       break
   }
+  })
+
+document.addEventListener("keydown", event => {
+  switch(event.key) {
+    case KEYS.r:
+      this.restart()
+      console.log(this.restart)
+      break
+    }
 })
 
-  }
 
- 
+}
+
+restart() {   
+  this.x = this.boardWidth / 2
+  this.y = this.boardHeight / 2
+  this.vy = 0
+  while (this.vy===0) {
+  this.vy = Math.floor(Math.random() * 10-5)
+  this.player1.score = 0
+  this.player2.score = 0
+  this.ball.reset()
+  }
+  this.vx = this.direction * (6 - Math.abs(this.vy))
+  
+} 
+
+
 
   render() {
 
@@ -81,6 +105,18 @@ document.addEventListener("keydown", event => {
 
      return
    }
+
+   if(this.player1.score >= 5){
+    document.getElementById("winner")
+    winner.innerText = "Player 1 is Way Better! | Press 'ctrl+R' to Restart"
+    return
+  }
+
+  if(this.player2.score >= 5){
+  document.getElementById("winner")
+  winner.innerText = "Player 2 is Way Better! | Press 'ctrl+R' to Restart"
+  return
+  }
 
     let svg = document.createElementNS(SVG_NS, "svg")
 
@@ -98,6 +134,7 @@ document.addEventListener("keydown", event => {
     this.score1.render(svg, this.player1.score)
     this.score2.render(svg, this.player2.score)
 
-  }
+    
 
+  }
 }
