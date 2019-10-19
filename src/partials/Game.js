@@ -47,7 +47,7 @@ export default class Game {
     this.score2 = new Score(this.width / 2 + 25, 30, 30);
 
     //ball
-    this.ball = new Ball(8, this.width, this.height);
+    this.ball = new Ball(9, this.width, this.height);
 
     document.addEventListener("keydown", event => {
       switch (event.key) {
