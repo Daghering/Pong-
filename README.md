@@ -2,6 +2,25 @@
 
 A starter project for a basic pong game using SVGs.
 
+
+## Technologies Used
+
+HTML, CSS, and Javascript. 
+ 
+## Personal Learnings
+
+I learned an incredible amount of javascript in very little time and can now understand the syntax much better. I
+
+know how things work a little better and have more confidence when using methods. This project was very 
+ 
+challenging and satisfying and helped me grow as a developer.
+
+
+### Author
+
+Jawes Dagher -github.com/Daghering
+
+
 ## Setup
 
 Ensure you have [Node.js](https://nodejs.org/en/) installed first.
@@ -39,3 +58,13 @@ Once you have done this, you can run:
 `$ npm run deploy`
 
 Now check out your deployed site 🙂
+
+
+### Awknowledgments
+
+Red Academy
+
+Friends and Family
+
+Javascript(The real hero)
+
