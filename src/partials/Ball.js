@@ -22,7 +22,7 @@ export default class Ball {
 
        if (hitLeft || hitRight) {
            this.vx = -this.vx
-           this.color = "black"
+           this.color = this.color
        } else if (hitTop || hitBottom) {
            this.vy = -this.vy
            this.color = this.createColor()
@@ -41,6 +41,7 @@ export default class Ball {
               
           ) {
               this.vx = -this.vx
+              this.color = this.createColor()
               
           }
        } else {
@@ -53,6 +54,7 @@ export default class Ball {
             
         ) {
             this.vx = -this.vx
+            this.color = this.createColor()
             
         }
        }

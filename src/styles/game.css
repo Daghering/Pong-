@@ -25,59 +25,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-h1 {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-h2 {
-  animation: blinker 1s step-start infinite;
-  text-align: center;
-  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  color: transparent;
-  padding-bottom: 20px;
-}
-
-h3 {
-  animation: blinker 1s step-start infinite;
-  text-align: center;
-  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-
-}
-
-body {
-  background-image: url("https://thumbs.gfycat.com/WatchfulUltimateBellsnake-size_restricted.gif"); 
-  background-size: cover;
-  background-position: center center;
-  
-}
-
-#game {
-  margin-left: 340px;
-}
-
-#winner {
-  
-    animation: blinker 1s step-start infinite;
-    text-align: center;
-    font-size: 1em;
-    font-style: bold;
-    color: black;
-    
-
-}
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -99,7 +46,8 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+  border-spacing: 0;
+  
 }
 
 /**
@@ -126,16 +74,66 @@ html {
 }
 
 body {
+  background-image: url("https://thumbs.gfycat.com/WatchfulUltimateBellsnake-size_restricted.gif"); 
+  background-size: cover;
+  background-position: center center;
   align-items: center;
   display: flex;
   font-family: 'Silkscreen Web', monotype;
   height: 100vh;
   justify-content: center;
   width: 100%;
+  
+  
 }
 
 h1 {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 2.5rem;
   margin-bottom: 1rem; 
   text-align: center;
+}
+
+
+h2 {
+  animation: blinker 1s step-start infinite;
+  text-align: center;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 20px;
+}
+
+h3 {
+  animation: blinker 1s step-start infinite;
+  text-align: center;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+
+}
+
+
+#game {
+  margin-left: 340px;
+  
+}
+
+#winner {
+  
+    animation: blinker 1s step-start infinite;
+    text-align: center;
+    font-size: 2.5em;
+    font-style: bold;
+    color: black; 
+
 }

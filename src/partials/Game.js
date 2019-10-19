@@ -65,6 +65,9 @@ export default class Game {
         case KEYS.r:
           this.restart();
           console.log(this.restart);
+          setTimeout((refresh) => {
+            location.reload(true)
+          }, 1);
           break;
       }
     });
@@ -96,7 +99,7 @@ export default class Game {
     //Winner screen
     if (this.player1.score >= 5) {
       document.getElementById("winner");
-      winner.innerText = "Player 1 is Way Better! | Press 'ctrl+R' to Restart";
+      winner.innerText = "Player 1 Wins!!";
       document.getElementById("rainbow").play();
       playloop = false;
       return;
@@ -104,7 +107,7 @@ export default class Game {
 
     if (this.player2.score >= 5) {
       document.getElementById("winner");
-      winner.innerText = "Player 2 is Way Better! | Press 'ctrl+R' to Restart";
+      winner.innerText = "Player 2 Wins!!";
       document.getElementById("rainbow").play();
       playloop = false;
       return;
