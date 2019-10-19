@@ -97,7 +97,7 @@ export default class Game {
     }
 
     //Winner screen
-    if (this.player1.score >= 5) {
+    if (this.player1.score >= 3) {
       document.getElementById("winner");
       winner.innerText = "Player 1 Wins!!";
       document.getElementById("rainbow").play();
@@ -105,7 +105,7 @@ export default class Game {
       return;
     }
 
-    if (this.player2.score >= 5) {
+    if (this.player2.score >= 3) {
       document.getElementById("winner");
       winner.innerText = "Player 2 Wins!!";
       document.getElementById("rainbow").play();
