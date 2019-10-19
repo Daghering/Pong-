@@ -68,6 +68,7 @@ export default class Game {
           break;
       }
     });
+    
   }
 
   restart() {
