@@ -46,7 +46,7 @@ coordinates(x, y, width, height) {
 
 render(svg) {
     let rect = document.createElementNS(SVG_NS, "rect")
-       rect.setAttributeNS(null, "fill", "red")
+       rect.setAttributeNS(null, "fill", "magenta")
        rect.setAttributeNS(null, "width", this.width)
        rect.setAttributeNS(null, "height", this.height)
        rect.setAttributeNS(null, "x", this.x)

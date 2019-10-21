@@ -99,7 +99,7 @@ export default class Game {
     //Winner screen
     if (this.player1.score >= 3) {
       document.getElementById("winner");
-      winner.innerText = "Player 1 Wins!!";
+      winner.innerText = "Player 1 Wins a Unicorn!!";
       document.getElementById("rainbow").play();
       playloop = false;
       return;
@@ -107,7 +107,7 @@ export default class Game {
 
     if (this.player2.score >= 3) {
       document.getElementById("winner");
-      winner.innerText = "Player 2 Wins!!";
+      winner.innerText = "Player 2 Wins a Unicorn!!";
       document.getElementById("rainbow").play();
       playloop = false;
       return;
