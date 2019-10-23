@@ -63,8 +63,6 @@ export default class Game {
     document.addEventListener("keydown", event => {
       switch (event.key) {
         case KEYS.r:
-          this.restart();
-          console.log(this.restart);
           setTimeout((refresh) => {
             location.reload(true)
           }, 1);
@@ -74,18 +72,7 @@ export default class Game {
     
   }
 
-  restart() {
-    this.x = this.boardWidth / 2;
-    this.y = this.boardHeight / 2;
-    this.vy = 0;
-    while (this.vy === 0) {
-      this.vy = Math.floor(Math.random() * 10 - 5);
-      this.player1.score = 0;
-      this.player2.score = 0;
-      this.ball.reset();
-    }
-    this.vx = this.direction * (6 - Math.abs(this.vy));
-  }
+  
 
   render() {
     if (this.gameOn) {
