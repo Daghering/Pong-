@@ -9,11 +9,36 @@ HTML, CSS, and Javascript.
  
 ## Personal Learnings
 
-I learned an incredible amount of javascript in very little time and can now understand the syntax much better. I
+I learned an incredible amount of javascript in very little time and can now 
 
-know how things work a little better and have more confidence when using methods. This project was very 
- 
-challenging and satisfying and helped me grow as a developer.
+understand the syntax much better. I know how things work a little better and have 
+
+more confidence when using methods. 
+
+This project was very challenging and satisfying and helped me grow as a developer.
+
+For my stretch goals I made the ball colour change on impact with the top and bottom
+
+border and the paddles. I also made it so the ball stays the same colour until it 
+
+hits one of those surfaces again. Having the game not auto start was important to me 
+
+so I added spacebar to start and pause the game. I made the "r" key a reset function 
+
+that refreshes quickly to begin a new game. Finally, I added in a victory song and 
+
+message for the winner.
+
+CONTROLS: 
+
+Player 1 Movement - (A,Z)
+          
+Player 2 Movement - (Up and Down arrows)
+
+Start/Pause - (SpaceBar)
+
+Restart - (R)
+
 
 
 ### Author
